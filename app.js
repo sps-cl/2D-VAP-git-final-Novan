@@ -1,16 +1,26 @@
 function addTodo() {
     var inputElement = document.getElementById("input");
     var novyUkol = inputElement.value;
-    var list = document.createElement("li");
-    var text = document.createTextNode(novyUkol);
-    list.appendChild(text);
-
     if (novyUkol === '') {
-        alert("Musíš něco zapsat!");
+      alert("Musíš něco zapsat!");
     } else {
+        var list = document.createElement("LI");
+        var text = document.createTextNode(novyUkol);
+        list.appendChild(text);
+
+        var span = document.createElement("SPAN");
+        var txt = document.createTextNode("\u00D7");
+        span.className = "close";
+        span.appendChild(txt);
+        list.appendChild(span);
+
         document.getElementById("seznam").appendChild(list);
         inputElement.value = "";
     }
+    span.onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+  }
 }
 
 var list = document.querySelector('ul');

@@ -62,12 +62,6 @@ input{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   }
 
-.disabledButton {
-    opacity: 0.6;
-    cursor: not-allowed;
-  }
-  
-
 .seznam {
     margin: 0;
     padding: 0;
@@ -108,4 +102,18 @@ ul li {
     transform: rotate(45deg);
     height: 15px;
     width: 7px;
+  }
+
+  .close {
+    position: absolute;
+    color:black;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .close:hover {
+    background-color: red;
+    border-radius: 10px;
+    color: black;
   }
