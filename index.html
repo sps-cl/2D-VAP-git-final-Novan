@@ -9,6 +9,13 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <script src = "app.js" ></script>
+    <div class="header">
+        <h2 class="nazev">Můj seznam úkolů</h2>
+        <input type="text" id="input" placeholder="Zadej sem úkol (např. Uklidit doma,...)">
+        <span id="button" onclick="addTodo()" class="button">Přidat úkol</span>
+      </div>
+      <ul id="seznam">
+      </ul>
+      <script src = "app.js" ></script>
 </body>
 </html>

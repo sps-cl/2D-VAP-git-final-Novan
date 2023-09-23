@@ -1,0 +1,111 @@
+body{
+    margin:0;
+    border-radius: 0px;
+    scroll-behavior: auto;
+    background-color: #727272
+}
+
+.nazev{
+    margin: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-style: italic;
+    font-size: 200%;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    padding: 0.5%;
+    border-color:black;
+    background-color: #a8a8a8;
+    text-decoration: underline;
+    text-underline-position:auto;
+    border: 3px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.header{
+    text-align: center; 
+    padding: 10px;
+    background-color: #525152;
+    border-bottom: 6px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+}
+
+input{
+    margin: 0;
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 7px;
+    width: 70%;
+    padding: 10px;
+    float: center;
+    font-size: 16px;
+}
+
+.button{
+    padding: 10px;
+    background: #a8a8a8;
+    border-color: black;
+    border-style: outset;
+    border-radius: 7px;
+    width: 30%;
+    float: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+.disabledButton {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+
+.seznam {
+    margin: 0;
+    padding: 0;
+    border-left: 15px;
+    border-right: 15px;
+  }
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 40px 12px 40px;
+    margin-right: 35px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    list-style-type: none;
+    list-style-position: outside;
+    background: #eee;
+    font-size: 16px;
+    font-family: verdana;
+    transition: 0.2s;
+    user-select: none;
+  }
+
+  ul li.checked {
+    background: #a1a1a1;
+    color: #fff;
+    text-decoration: line-through;
+  }
+
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fffcfc;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }

@@ -1,2 +1,3 @@
 # 2D-VAP-git-final-Novan
-To-do list
+## Alpha version To-Do list
+Verze Aplha 1.0 To-Do list 
